@@ -58,12 +58,11 @@
                                 </div>
                             </div>
                             {{-- ======   Card     ======= --}}
-                           
                         @endforeach
 
 
                     </div>
-                     <div class="more-btn text-center my-4">
+                    <div class="more-btn text-center my-4">
                         {{-- pagination links --}}
                         <div class="d-flex justify-content-center">
                             {{ $projects->withQueryString()->links() }}
@@ -99,21 +98,24 @@
                             <div class="row form-group">
                                 <div class="col-md-12 mb-3 mb-md-0">
                                     <label for="fname">Full Name</label>
-                                    <input type="text" name="name" id="fname" class="form-control bg-white" placeholder="Write your fullname">
+                                    <input type="text" name="name" id="fname" class="form-control bg-white"
+                                        placeholder="Write your fullname">
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label for="email">Email / Phone</label>
-                                    <input type="text" name="address" id="email" class="form-control bg-white" placeholder="Write your email/phone">
+                                    <input type="text" name="address" id="email" class="form-control bg-white"
+                                        placeholder="Write your email/phone">
                                 </div>
                             </div>
 
                             <div class="row form-group mb-5">
                                 <div class="col-md-12">
                                     <label for="message">Message</label>
-                                    <textarea name="message" id="message" cols="30" rows="7" class="form-control bg-white" placeholder="Write your message here" required></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="7" class="form-control bg-white"
+                                        placeholder="Write your message here" required></textarea>
                                 </div>
                             </div>
 
