@@ -9,7 +9,7 @@
 
  <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
      <div class="site-logo">
-         <a href="index.html">Jabir Faisalfffffff</a>
+         <a href="index.html">Jabir Faisal</a>
      </div>
 
      <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#"
