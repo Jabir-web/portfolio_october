@@ -7,6 +7,21 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
+    // Delete 
+    public function destroy($id)
+    {
+        $project = Project::findOrFail($id);
+
+        // Optional: delete project image if saved locally
+        if ($project->image && file_exists(public_path('uploads/' . $project->image))) {
+            unlink(public_path('uploads/' . $project->image));
+        }
+
+        $project->delete();
+
+        return redirect()->back()->with('success', 'Project deleted successfully.');
+    }
+
     //    show 
     public function show()
     {
@@ -107,10 +122,10 @@ class ProjectController extends Controller
         return redirect()->back()->with('success', 'Project saved successfully.');
     }
 
-       public function viewAndRedirect(Request $request, $id)
+    public function viewAndRedirect(Request $request, $id)
     {
         $project = Project::findOrFail($id);
-            $project->increment('views');
+        $project->increment('views');
         return view('code-project-detail', compact('project'));
     }
 }
