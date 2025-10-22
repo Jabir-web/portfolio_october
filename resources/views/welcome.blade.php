@@ -3,7 +3,7 @@
     <section class="site-section-hero pt-5 " data-stellar-background-ratio="0.5" id="section-home">
         <div class="">
             <h1 class="text-center  head-text">Jabir Faisal</h1>
-            <p class="mb-4 text-center head-para">Creative Software Developer & Designer</p>
+            <h4 class="mb-4 text-center head-para">Creative Software Developer & Designer</h4>
             <div class="owl-carousel owl-theme">
                 @foreach ($banners as $banner)
                     <div class="item-video rounded overflow-hidden" data-merge="3" style="height: 500px;">
