@@ -42,7 +42,8 @@
                                 <td>
                                     <!-- Example actions, adjust as needed -->
                                     {{-- <a href="" class="btn rounded btn-sm btn-dark">View</a> --}}
-                                    <a href="" class="btn rounded btn-sm btn-info">Edit</a>
+                                    <a href="" class="btn rounded btn-sm btn-info"><span
+                         class="icon-facebook"></span></a>
                                     <!-- Delete Form -->
                                     <form action="{{ route('projects.destroy', $user->id) }}" method="POST"
                                         onsubmit="return confirm('Are you sure you want to delete this project?');">
