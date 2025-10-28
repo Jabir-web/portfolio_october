@@ -41,7 +41,7 @@
                                 <td>{{ $user->created_at ? $user->created_at->format('d-M-Y') : 'N/A' }}</td>
                                 <td>
                                     <!-- Example actions, adjust as needed -->
-                                    <a href="" class="btn rounded btn-sm btn-dark">View</a>
+                                    {{-- <a href="" class="btn rounded btn-sm btn-dark">View</a> --}}
                                     <a href="" class="btn rounded btn-sm btn-info">Edit</a>
                                     <!-- Delete Form -->
                                     <form action="{{ route('projects.destroy', $user->id) }}" method="POST"
