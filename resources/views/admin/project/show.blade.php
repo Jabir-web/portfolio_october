@@ -22,7 +22,6 @@
                             <th scope="col">#</th>
                             <th scope="col">Title</th>
                             <th scope="col">Image</th>
-                            <th scope="col">Version</th>
                             <th scope="col">Views</th>
                             <th scope="col">Amount</th>
                             <th scope="col">Status</th>
@@ -36,7 +35,6 @@
                                 <th scope="row">{{ $index + 1 }}</th>
                                 <td>{{ $user->title }}</td>
                                 <td>{{ $user->image ?? 'N/A' }}</td>
-                                <td>{{ $user->version ?? 'N/A' }}</td>
                                 <td>{{ $user->views ?? 'N/A' }}</td>
                                 <td>{{ $user->amount ?? 'N/A' }}</td>
                                 <td>{{ $user->status ?? 'N/A' }}</td>
