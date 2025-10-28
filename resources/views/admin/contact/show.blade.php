@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            @push('scripts')
+          
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
                     const deleteModal = document.getElementById('deleteModal');
@@ -86,7 +86,7 @@
                     });
                 });
             </script>
-            @endpush
+          
         </div>
     </section>
 @endsection
