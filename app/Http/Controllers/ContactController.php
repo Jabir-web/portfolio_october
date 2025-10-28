@@ -8,9 +8,10 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     //show
-    public function show(){
+    public function show()
+    {
         $message = Contact::get();
-        return view('admin.contact.show',[
+        return view('admin.contact.show', [
             'messages' => $message
         ]);
     }
@@ -32,5 +33,13 @@ class ContactController extends Controller
         }
 
         return redirect()->back()->with('success', 'Message sent successfully.');
+    }
+
+    public function destroy($id)
+    {
+        $message = Contact::findOrFail($id);
+        $message->delete();
+
+        return redirect()->back()->with('success', 'Message deleted successfully');
     }
 }

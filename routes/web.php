@@ -36,6 +36,8 @@ Route::post('/admin/banner/store', [BannerController::class, 'store'])->name('ba
 // =========== For Contact ===========
 Route::get('/all-messages', [ContactController::class, 'show'])->name('all.messages');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
+Route::delete('/admin/contacts/{id}', [ContactController::class, 'destroy'])->name('contacts.destroy');
 // =========== For Contact  ===========
 // =========== For Project   ===========
 Route::get('/all-projects', [ProjectController::class, 'show'])->name('all.projects');
