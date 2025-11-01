@@ -11,7 +11,7 @@ class PageController extends Controller
     public function home()
     {
         $banner = Banner::where('status', 'active')->get();
-        $project = Project::where('status', 'active')->paginate(6);
+        $project = Project::where('status', 'active')->orderBy('id', 'desc')->paginate(6);
         return view('welcome',[
             'banners' => $banner,
             'projects' => $project,
