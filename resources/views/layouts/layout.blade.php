@@ -4,35 +4,50 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Primary Meta Tags -->
+    <title>Jabir Faisal - Expert Laravel Web Developer in Pakistan | Portfolio</title>
+    <meta name="title" content="Jabir Faisal - Expert Laravel Web Developer in Pakistan | Portfolio">
+    <meta name="description" content="I'm Jabir Faisal, a professional Laravel Web Developer from Pakistan. I build dynamic websites, web apps, and business software using Laravel, PHP, HTML, CSS, and JavaScript. Explore my portfolio and hire me for your next project.">
+    <meta name="keywords" content="Laravel developer, web developer Pakistan, hire Laravel expert, full stack developer, PHP developer, freelance web developer, Jabir Faisal, Laravel portfolio, web app developer, backend developer, frontend developer">
     <meta name="author" content="Jabir Faisal">
-    <link rel="shortcut icon" href="favicon.png">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jabirfaisal.com/">
+    <meta property="og:title" content="Jabir Faisal - Expert Laravel Web Developer in Pakistan | Portfolio">
+    <meta property="og:description" content="Professional Laravel Web Developer from Pakistan. I create modern, responsive, and scalable websites and web applications.">
+    <meta property="og:image" content="https://jabirfaisal.com/images/og-image.jpg">
 
-    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600, 700,900|Oswald:400,700" rel="stylesheet">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jabirfaisal.com/">
+    <meta property="twitter:title" content="Jabir Faisal - Expert Laravel Web Developer in Pakistan | Portfolio">
+    <meta property="twitter:description" content="Explore the portfolio of Jabir Faisal — a Laravel Web Developer from Pakistan building powerful and secure web applications.">
+    <meta property="twitter:image" content="https://jabirfaisal.com/images/og-image.jpg">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900|Oswald:400,700" rel="stylesheet">
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}">
-
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
-
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fancybox.min.css') }}">
-
-  
-
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <title>Jabir Faisal - Laravel Web Developer</title>
-
-
 </head>
+
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
 
