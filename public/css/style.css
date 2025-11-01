@@ -184,6 +184,7 @@ h5,
     .site-section {
         padding: 5em 0;
     }
+    
 }
 
 .site-section.site-section-sm {
@@ -1174,7 +1175,9 @@ h5,
     .main-content .photos .photo-item img {
         height: 200px;
     }
+ 
 }
+
 
 .main-content .photos .photo-item:hover img {
     -webkit-transform: scale(1.02);
