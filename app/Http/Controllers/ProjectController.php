@@ -128,4 +128,94 @@ class ProjectController extends Controller
         $project->increment('views');
         return view('code-project-detail', compact('project'));
     }
+
+    // update
+    public function update(Request $request, $id)
+    {
+        $project = Project::findOrFail($id);
+
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'version' => 'nullable|string|max:100',
+            'size' => 'nullable|string|max:100',
+            'video_link' => 'nullable|string|max:255',
+            'amount' => 'nullable|string|max:100',
+            'description' => 'nullable|string',
+            'status' => 'nullable|string|max:50',
+            'views' => 'nullable|integer',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:4096',
+        ]);
+
+        // handle image replacement if provided
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $filename = time() . '.jpg';
+            $path = public_path('uploads/projects/');
+            if (!file_exists($path)) {
+                mkdir($path, 0777, true);
+            }
+
+            try {
+                $mime = $file->getMimeType();
+                $src = null;
+
+                if ($mime === 'image/jpeg' || $mime === 'image/jpg') {
+                    $src = imagecreatefromjpeg($file->getRealPath());
+                } elseif ($mime === 'image/png') {
+                    $src = imagecreatefrompng($file->getRealPath());
+                } elseif ($mime === 'image/gif') {
+                    $src = imagecreatefromgif($file->getRealPath());
+                }
+
+                if (! $src) {
+                    // if GD can't create resource, fallback to move
+                    $file->move($path, $filename);
+                    $validated['image'] = 'uploads/projects/' . $filename;
+                } else {
+                    $origW = imagesx($src);
+                    $origH = imagesy($src);
+
+                    // target max width
+                    $maxW = 1400;
+                    if ($origW > $maxW) {
+                        $ratio = $maxW / $origW;
+                        $newW = (int) round($origW * $ratio);
+                        $newH = (int) round($origH * $ratio);
+                    } else {
+                        $newW = $origW;
+                        $newH = $origH;
+                    }
+
+                    $dst = imagecreatetruecolor($newW, $newH);
+
+                    // handle PNG transparency by filling white background (since saving as JPG)
+                    $white = imagecolorallocate($dst, 255, 255, 255);
+                    imagefill($dst, 0, 0, $white);
+
+                    imagecopyresampled($dst, $src, 0, 0, 0, 0, $newW, $newH, $origW, $origH);
+
+                    // save as JPEG with quality 75
+                    imagejpeg($dst, $path . $filename, 75);
+
+                    imagedestroy($src);
+                    imagedestroy($dst);
+
+                    $validated['image'] = 'uploads/projects/' . $filename;
+                }
+            } catch (\Throwable $e) {
+                // final fallback
+                $file->move($path, $filename);
+                $validated['image'] = 'uploads/projects/' . $filename;
+            }
+
+            // delete old image if exists
+            if ($project->image && file_exists(public_path($project->image))) {
+                @unlink(public_path($project->image));
+            }
+        }
+
+        $project->update($validated);
+
+        return redirect()->back()->with('success', 'Project updated successfully.');
+    }
 }
