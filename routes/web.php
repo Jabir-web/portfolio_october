@@ -45,7 +45,7 @@ Route::get('/add-projects', [ProjectController::class, 'view'])->name('add.proje
 Route::post('/admin/projects/store', [ProjectController::class, 'store'])->name('projects.store');
 Route::get('projects/{id}/view', [ProjectController::class, 'viewAndRedirect'])->name('project.view');
 Route::delete('/projects/{id}', [ProjectController::class, 'destroy'])->name('projects.destroy');
-Route::delete('/projects/update/{id}', [ProjectController::class, 'update'])->name('projects.update');
+Route::put('/admin/projects/{id}', [ProjectController::class, 'update'])->name('projects.update');
 
 // =========== For Project   ===========
 

@@ -8,8 +8,10 @@
     <!-- Primary Meta Tags -->
     <title>Jabir Faisal - Expert Laravel Web Developer in Pakistan | Portfolio</title>
     <meta name="title" content="Jabir Faisal - Expert Laravel Web Developer in Pakistan | Portfolio">
-    <meta name="description" content="I'm Jabir Faisal, a professional Laravel Web Developer from Pakistan. I build dynamic websites, web apps, and business software using Laravel, PHP, HTML, CSS, and JavaScript. Explore my portfolio and hire me for your next project.">
-    <meta name="keywords" content="Laravel developer, web developer Pakistan, hire Laravel expert, full stack developer, PHP developer, freelance web developer, Jabir Faisal, Laravel portfolio, web app developer, backend developer, frontend developer">
+    <meta name="description"
+        content="I'm Jabir Faisal, a professional Laravel Web Developer from Pakistan. I build dynamic websites, web apps, and business software using Laravel, PHP, HTML, CSS, and JavaScript. Explore my portfolio and hire me for your next project.">
+    <meta name="keywords"
+        content="Laravel developer, web developer Pakistan, hire Laravel expert, full stack developer, PHP developer, freelance web developer, Jabir Faisal, Laravel portfolio, web app developer, backend developer, frontend developer">
     <meta name="author" content="Jabir Faisal">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -22,14 +24,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jabirfaisal.com/">
     <meta property="og:title" content="Jabir Faisal - Expert Laravel Web Developer in Pakistan | Portfolio">
-    <meta property="og:description" content="Professional Laravel Web Developer from Pakistan. I create modern, responsive, and scalable websites and web applications.">
+    <meta property="og:description"
+        content="Professional Laravel Web Developer from Pakistan. I create modern, responsive, and scalable websites and web applications.">
     <meta property="og:image" content="https://jabirfaisal.com/images/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://jabirfaisal.com/">
     <meta property="twitter:title" content="Jabir Faisal - Expert Laravel Web Developer in Pakistan | Portfolio">
-    <meta property="twitter:description" content="Explore the portfolio of Jabir Faisal — a Laravel Web Developer from Pakistan building powerful and secure web applications.">
+    <meta property="twitter:description"
+        content="Explore the portfolio of Jabir Faisal — a Laravel Web Developer from Pakistan building powerful and secure web applications.">
     <meta property="twitter:image" content="https://jabirfaisal.com/images/og-image.jpg">
 
     <!-- Google Fonts -->
@@ -75,6 +79,9 @@
     <script src="{{ asset('js/lozad.min.js') }}"></script>
 
     <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     {{-- <script src="//cdn.datatables.net/2.3.4/js/dataTables.min.js"></script> --}}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -98,9 +105,7 @@
                 }
             }
         })
-        
-    
-        </script>
+    </script>
     <script src="{{ asset('js/main.js') }}"></script>
 
 
