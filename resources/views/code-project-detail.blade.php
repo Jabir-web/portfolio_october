@@ -21,7 +21,7 @@
                             <div class="row ">
                                 <div class="view-box bg-white rounded p-3 w-25 col-md-3 m-1" style="font-size: 18px">
                                     Likes: 
-                                    <span class="font-weight-bold">{{ $project->likes }}</span>
+                                    <span class="font-weight-bold">{{ \App\Models\Like::where('project_id', $project->id)->count() }}</span>
                                 </div>
                                 <div class="view-box bg-white rounded p-3 w-25 col-md-3 m-1" style="font-size: 18px">
                                     Views: 
