@@ -47,5 +47,10 @@ Route::get('projects/{id}/view', [ProjectController::class, 'viewAndRedirect'])-
 Route::delete('/projects/{id}', [ProjectController::class, 'destroy'])->name('projects.destroy');
 Route::put('/admin/projects/{id}', [ProjectController::class, 'update'])->name('projects.update');
 
+Route::post('/project/like/{id}', [App\Http\Controllers\ProjectController::class, 'like'])
+    ->name('project.like')
+    ->middleware('auth');
+
+
 // =========== For Project   ===========
 

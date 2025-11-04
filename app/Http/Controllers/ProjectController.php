@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use App\Models\Like;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProjectController extends Controller
 {
@@ -217,5 +219,38 @@ class ProjectController extends Controller
         $project->update($validated);
 
         return redirect()->back()->with('success', 'Project updated successfully.');
+    }
+
+
+
+    public function like($id)
+    {
+        $user = Auth::user();
+        $project = Project::findOrFail($id);
+
+        // Check if user already liked
+        $existingLike = Like::where('user_id', $user->id)
+            ->where('project_id', $project->id)
+            ->first();
+
+        if ($existingLike) {
+            // Unlike
+            $existingLike->delete();
+            $liked = false;
+        } else {
+            // Like
+            Like::create([
+                'user_id' => $user->id,
+                'project_id' => $project->id,
+            ]);
+            $liked = true;
+        }
+
+        $likeCount = Like::where('project_id', $project->id)->count();
+
+        return response()->json([
+            'liked' => $liked,
+            'likes' => $likeCount,
+        ]);
     }
 }

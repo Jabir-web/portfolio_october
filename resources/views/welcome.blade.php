@@ -49,11 +49,19 @@
                                                     class="icon-eye mr-2"></span>{{ $project->views }}</a>
                                         </div>
                                         <div>
-                                            <div class=" rounded-circle heart-icon  d-inline-block d-flex justify-content-center align-items-center"
-                                                style="width: 50px; height: 50px;">
-                                                <i class="icon icon-heart "></i>
+                                            @php
+                                                $liked =
+                                                    $project->likes;
+                                            @endphp
+
+                                            <div class="btn btn-sm rounded {{ $liked ? 'btn-danger' : 'btn-light' }}"
+                                                onclick="likeProject({{ $project->id }}, this)" style="cursor: pointer;">
+                                                <i class="icon icon-heart mx-2"></i>
+                                             <span class="ms-2 like-count">{{ \App\Models\Like::where('project_id', $project->id)->count() }}</span>
+
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -199,5 +207,34 @@
                 }
             });
         });
+
+        function likeProject(id, element) {
+            @if (!auth()->check())
+                alert('Please login to like projects!');
+                return;
+            @endif
+
+            fetch(`/project/like/${id}`, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(res => res.json())
+                .then(data => {
+                    const countSpan = element.querySelector('.like-count');
+                    countSpan.textContent = data.likes;
+
+                    if (data.liked) {
+                        element.classList.remove('btn-light');
+                        element.classList.add('btn-danger');
+                    } else {
+                        element.classList.remove('btn-danger');
+                        element.classList.add('btn-light');
+                    }
+                })
+                .catch(err => console.error(err));
+        }
     </script>
 @endsection

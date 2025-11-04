@@ -33,12 +33,12 @@
                                 </div>
                                 <div class="view-box bg-white rounded p-3 w-25 col-md-3 m-1" style="font-size: 18px">
                                     Version: 
-                                    <span class="font-weight-bold">{{ $project->version}}</span>
+                                    <span class="font-weight-bold text-uppercase">{{ $project->version}}</span>
                                 </div>
-                                <div class="view-box bg-white rounded p-3 w-25 col-md-3 m-1" style="font-size: 18px">
+                                {{-- <div class="view-box bg-white rounded p-3 w-25 col-md-3 m-1" style="font-size: 18px">
                                     Downloads: 
                                     <span class="font-weight-bold">{{ $project->downloads }}</span>
-                                </div>
+                                </div> --}}
                                 <div class="view-box bg-white rounded p-3 w-25 col-md-3 m-1" style="font-size: 18px">
                                     Amount: 
                                   <span class="font-weight-bold">{{ number_format((int) $project->amount) }}</span>

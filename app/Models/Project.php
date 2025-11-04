@@ -21,4 +21,10 @@ class Project extends Model
         'amount',
         'status',
     ];
+
+    public function likes()
+{
+    return $this->hasMany(Like::class);
+}
+
 }
