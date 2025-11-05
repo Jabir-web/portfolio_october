@@ -52,7 +52,7 @@
              <li><a target="_blank" href="https://www.instagram.com/jabir.dev"><span class="icon-instagram"></span></a></li>
              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100085253318736"><span
                          class="icon-facebook"></span></a></li>
-             <li><a target="_blank" href="https://wa.me/+923163436817"><span class="icon-whatsapp"></span></a></li>
+             <li><a target="_blank" href="https://wa.me/+923202049281"><span class="icon-whatsapp"></span></a></li>
              <li><a target="_blank" href="https://www.linkedin.com/in/jabir-faisal/"><span class="icon-linkedin"></span></a></li>
          </ul>
      </div>

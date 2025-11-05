@@ -42,4 +42,13 @@ class ContactController extends Controller
 
         return redirect()->back()->with('success', 'Message deleted successfully');
     }
+
+    public function markAsRead($id)
+    {
+        $message = Contact::findOrFail($id);
+        $message->status = 'Read';
+        $message->save();
+
+        return redirect()->back()->with('success', 'Message marked as read.');
+    }
 }
