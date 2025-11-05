@@ -51,7 +51,11 @@
     <link rel="stylesheet" href="{{ asset('css/fancybox.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
-
+<style>
+    .js-clone-nav{
+        z-index: 156;
+    }
+</style>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
 
