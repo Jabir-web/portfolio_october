@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fancybox.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 <style>
     .site-mobile-menu,.nav-link{
