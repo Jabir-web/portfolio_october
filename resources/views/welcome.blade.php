@@ -23,7 +23,7 @@
             <div class="col-12 text-center">
                 <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
                     <h2 class="heading ">Code Projects</h2>
-                    <p class="heading-para">
+                    <p class="heading-para w-50">
                         Explore a variety of creative coding projects showcasing modern technologies, problem-solving
                         skills, and innovation. Each project reflects passion, dedication, and continuous learning in the
                         world of web development.
