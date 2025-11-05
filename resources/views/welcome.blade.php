@@ -21,8 +21,15 @@
 
         <div class="row mb-3">
             <div class="col-12 text-center">
-                <div class="d-inline-block border-2 p-md-4 p-sm-1">
+                <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
                     <h2 class="heading ">Code Projects</h2>
+                    <p class="heading-para">
+                        Explore a variety of creative coding projects showcasing modern technologies, problem-solving
+                        skills, and innovation. Each project reflects passion, dedication, and continuous learning in the
+                        world of web development.
+                    </p>
+
+
                 </div>
             </div>
         </div>
@@ -50,14 +57,14 @@
                                         </div>
                                         <div>
                                             @php
-                                                $liked =
-                                                    $project->likes;
+                                                $liked = $project->likes;
                                             @endphp
 
                                             <div class="btn btn-sm rounded {{ $liked ? 'btn-danger' : 'btn-light' }}"
                                                 onclick="likeProject({{ $project->id }}, this)" style="cursor: pointer;">
                                                 <i class="icon icon-heart mx-2"></i>
-                                             <span class="ms-2 like-count">{{ \App\Models\Like::where('project_id', $project->id)->count() }}</span>
+                                                <span
+                                                    class="ms-2 like-count">{{ \App\Models\Like::where('project_id', $project->id)->count() }}</span>
 
                                             </div>
                                         </div>
@@ -92,8 +99,12 @@
         <section class="site-section " id="section-contact">
             <div class="row mb-3">
                 <div class="col-12 text-center">
-                    <div class="d-inline-block border-2 p-4">
+                    <div class="d-inline-block  d-flex flex-column justify-content-center align-items-center">
                         <h2 class="heading ">Contact Me</h2>
+                        <p class="heading-para w-25">
+                            I’d love to hear from you! Whether you have a project idea, a question, or just want to connect,
+                            feel free to reach out anytime.
+                        </p>
                     </div>
                 </div>
             </div>
