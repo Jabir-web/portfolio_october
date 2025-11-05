@@ -49,10 +49,12 @@
     <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fancybox.min.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="{{ asset('css/styling.css') }}">
 </head>
 <style>
-    .site-mobile-menu,.nav-link{
+    .site-mobile-menu,
+    .nav-link {
         z-index: 5000 !important;
     }
 </style>
@@ -111,7 +113,22 @@
         })
     </script>
     <script src="{{ asset('js/main.js') }}"></script>
-
+    <script>
+        gsap.from(".code-project-card", {
+            x: 0,
+            y: -150,
+            opacity: 0,
+            duration: 1.0,
+            ease: "power3.out"
+        });
+        gsap.from(".btn", {
+            opacity: 0,
+            scale: 0.7,
+            duration: 1,
+            delay: 1.7,
+            ease: "back.out(1.0)"
+        });
+    </script>
 
 </body>
 
