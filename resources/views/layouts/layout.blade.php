@@ -52,8 +52,8 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <style>
-    .js-clone-nav{
-        z-index: 156;
+    .site-mobile-menu,.nav-link{
+        z-index: 5000 !important;
     }
 </style>
 
