@@ -61,6 +61,15 @@ h5,
     color: #dd4a48;
 }
 
+label{
+    width: 100%;
+    text-align: center;
+}
+
+input::placeholder,textarea::placeholder{
+    text-align: center;
+}
+
 .border-2 {
     border-width: 2px;
 }
@@ -1417,6 +1426,7 @@ h5,
         /* background-color: red; */
         color: #494949;
     }
+   
 }
 
 .block-13 .owl-nav .owl-prev,

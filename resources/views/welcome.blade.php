@@ -116,7 +116,7 @@
                             @csrf
                             <div class="row form-group">
                                 <div class="col-md-12 mb-3 mb-md-0">
-                                    <label for="fname">Full Name</label>
+                                    <label for="fname" class=" w-100">Full Name</label>
                                     <input type="text" name="name" id="fname" class="form-control bg-white"
                                         placeholder="Write your fullname">
                                 </div>
