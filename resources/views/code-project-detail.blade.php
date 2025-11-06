@@ -43,10 +43,10 @@
                                     Amount: 
                                   <span class="font-weight-bold">{{ number_format((int) $project->amount) }}</span>
                                 </div>
-                                <div class="view-box bg-primary rounded d-flex justify-content-center align-items-center  w-25 col-md-3 m-1" style="font-size: 18px">
-                                   <a href="{{ $project->video_link }}" target="_blank" class="btn btn-primary">Live Demo</a>
-                                </div>
-                              
+                                
+                            </div>
+                            <div class="view-box bg-primary rounded d-flex justify-content-center align-items-center  col-md-3 m-1" style="font-size: 18px">
+                               <a href="{{ $project->video_link }}" target="_blank" class="btn btn-primary">Live Demo</a>
                             </div>
                            
                         </div>
