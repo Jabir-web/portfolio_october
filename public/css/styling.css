@@ -80,6 +80,9 @@ h5,
 .color-white-opacity-5 {
     color: rgba(222, 152, 152, 0.5);
 }
+.js-clone-nav,.nav-link{
+    z-index: 999 !important;
+}
 
 .site-wrap:before {
     display: none;
@@ -1372,9 +1375,7 @@ h5,
         z-index: 2;
         position: relative;
     }
-    .site-section-hero {
-        /* padding: 10px 0px !important; */
-    }
+    
     .header-bar {
         background-color: #eaeaea;
         z-index: 10000;
