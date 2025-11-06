@@ -112,7 +112,7 @@
             }
         })
     </script>
-    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/mains.js') }}"></script>
     <script>
         gsap.from(".code-project-card", {
             x: 0,
