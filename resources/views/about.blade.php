@@ -3,8 +3,7 @@
     <section class="site-section-hero pt-5 " data-stellar-background-ratio="0.5" id="section-home">
         <div class="">
             <h1 class="text-center  head-text">About Me</h1>
-            <h2 class="mb-4 text-center fw-bold">Jabir Faisal</h2>
-            <p class="mb-4 text-center head-para">Creative Software Developer & Designer</p>
+            {{-- <h2 class="mb-4 text-center fw-bold">Jabir Faisal</h2> --}}
             <div class="p-5 rounded bg-light container h-100">
                 <div class="row h-100">
                     <div class="col-md-4">
@@ -12,6 +11,7 @@
                     </div>
                     <div class=" p-4 col-md-8">
                         <h1>Jabir Faisal</h1>
+                        <span class="mb-4 text-center text-primary head-para font-weight-bold"><i>Creative Software Developer & Designer</i></span>
                         <p>I’m passionate about crafting visually stunning, high-performing web experiences. With a focus on
                             <strong>Laravel, JavaScript, and modern UI/UX</strong> design, I turn ideas into powerful
                             digital solutions that connect creativity and technology.
