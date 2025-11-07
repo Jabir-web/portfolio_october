@@ -5,12 +5,12 @@
             <h1 class="text-center  head-text">About Me</h1>
             <h2 class="mb-4 text-center fw-bold">Jabir Faisal</h2>
             <p class="mb-4 text-center head-para">Creative Software Developer & Designer</p>
-            <div class="p-4 rounded bg-light container h-100">
-                <div class="d-flex">
-                    <div class="w-25">
+            <div class="p-5 rounded bg-light container h-100">
+                <div class="row h-100">
+                    <div class="col-md-4">
                         <img src="{{ asset('images/jabir-s.jpg') }}" class="w-100 rounded" alt="">
                     </div>
-                    <div class=" px-4 w-75">
+                    <div class=" p-4 col-md-8">
                         <h1>Jabir Faisal</h1>
                         <p>I’m passionate about crafting visually stunning, high-performing web experiences. With a focus on
                             <strong>Laravel, JavaScript, and modern UI/UX</strong> design, I turn ideas into powerful
