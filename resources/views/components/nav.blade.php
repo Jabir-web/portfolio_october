@@ -7,6 +7,7 @@
      <div class="site-mobile-menu-body">
           <ul class="js-clone-nav">
              <li><a href="{{ route('homepage') }}#section-home" class="nav-link">Home</a></li>
+             <li><a href="{{ route('aboutpage') }}" class="nav-link">About Me</a></li>
              <li><a href="{{ route('homepage') }}#section-photos" class="nav-link">Code Projects</a></li>
              {{-- <li><a href="{{ route('homepage') }}#section-about" class="nav-link">Code Lab</a></li> --}}
              {{-- <li><a href="#section-testimonial" class="nav-link">Videos</a></li> --}}
@@ -51,6 +52,7 @@
      <div class="main-menu">
          <ul class="js-clone-nav">
              <li><a href="{{ route('homepage') }}#section-home" class="nav-link">Home</a></li>
+                <li><a href="{{ route('aboutpage') }}" class="nav-link">About Me</a></li>
              <li><a href="{{ route('homepage') }}#section-photos" class="nav-link">Code Projects</a></li>
              {{-- <li><a href="{{ route('homepage') }}#section-about" class="nav-link">Code Lab</a></li> --}}
              {{-- <li><a href="#section-testimonial" class="nav-link">Videos</a></li> --}}

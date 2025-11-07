@@ -10,6 +10,7 @@ use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ProjectController;
 
 Route::get('/', [PageController::class, 'home'])->name('homepage');
+Route::get('/about-me', [PageController::class, 'about'])->name('aboutpage');
 
 // =========== Auth Controller ===========
 Route::get('/auth/login', [PageController::class, 'login'])->name('loginpage');
