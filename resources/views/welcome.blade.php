@@ -88,6 +88,75 @@
             </section> <!-- #section-photos -->
         </div>
 
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="heading ">Paid Code Projects</h2>
+                    <p class="heading-para w-50">
+                        Explore a variety of creative coding projects showcasing modern technologies, problem-solving
+                        skills, and innovation. Each project reflects passion, dedication, and continuous learning in the
+                        world of web development.
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <section class="row align-items-stretch photos" id="section-photos">
+                <div class="col-12">
+                    <div class="row py-3 ">
+                        @foreach ($paidprojects as $project)
+                            {{-- ======   Card     ======= --}}
+                            <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div
+                                    class="code-project-card bg-white p-3 rounded m-2 h-100 d-flex flex-column justify-content-between">
+                                    <a href="{{ asset($project->image) }}" class=" photo-item" data-fancybox="gallery">
+                                        <img src="{{ asset($project->image) }}" class="rounded " width="100%"
+                                            alt="">
+                                    </a>
+                                    <h5 class="mt-2 ">{{ $project->title }}</h5>
+                                    <div class="d-flex justify-content-between align-items-center mb-3 ">
+                                        <div>
+                                            <a target="_blank" href="{{ route('project.view', $project->id) }}"
+                                                class="btn btn-primary btn-sm rounded mr-1">View More</a>
+
+                                            <a href="#" class="btn btn-dark btn-sm rounded"><span
+                                                    class="icon-eye mr-2"></span>{{ $project->views }}</a>
+                                        </div>
+                                        <div>
+                                            @php
+                                                $liked = $project->likes;
+                                            @endphp
+
+                                            <div class="btn btn-sm rounded {{ $liked ? 'btn-danger' : 'btn-light' }}"
+                                                onclick="likeProject({{ $project->id }}, this)" style="cursor: pointer;">
+                                                <i class="icon icon-heart mx-2"></i>
+                                                <span
+                                                    class="ms-2 like-count">{{ \App\Models\Like::where('project_id', $project->id)->count() }}</span>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- ======   Card     ======= --}}
+                        @endforeach
+
+
+                    </div>
+                    <div class="more-btn text-center my-4">
+                        {{-- pagination links --}}
+                        <div class="d-flex justify-content-center">
+                            {{ $projects->withQueryString()->links() }}
+                        </div>
+                    </div>
+
+                </div>
+            </section> <!-- #section-photos -->
+        </div>
+
         {{-- <div class="row mb-3 pt-4">
             <div class="col-12 text-center">
                 <div class="d-inline-block border-2 p-4">
