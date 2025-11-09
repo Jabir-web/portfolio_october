@@ -146,6 +146,22 @@
             repeat: -1,
             yoyo: true
         })
+
+        gsap.to('.pro-1',{
+            width: '95%',
+            duration: 2,
+            ease: "power1.inOut",
+        })
+        gsap.to('.pro-2',{
+            width: '85%',
+            duration: 2,
+            ease: "power1.inOut",
+        })
+        gsap.to('.pro-3',{
+            width: '80%',
+            duration: 2,
+            ease: "power1.inOut",
+        })
     </script>
 
 </body>

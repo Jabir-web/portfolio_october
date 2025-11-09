@@ -175,7 +175,7 @@
                             <h4>Web Development</h4>
                             <p>HTML, CSS, JS, Bootstrap</p>
                             <div class="progress bg-dark">
-                                <div class="progress-bar" style="width: 95%;"></div>
+                                <div class="progress-bar pro-1" >95%</div>
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                             <h4>UI/UX Design</h4>
                             <p>Figma, Photoshop & Illustrator</p>
                             <div class="progress bg-dark">
-                                <div class="progress-bar" style="width: 85%;"></div>
+                                <div class="progress-bar pro-2" >85%</div>
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@
                             <h4>Database & Backend</h4>
                             <p>MySQL, PHP, Laravel, APIs</p>
                             <div class="progress bg-dark">
-                                <div class="progress-bar" style="width: 80%;"></div>
+                                <div class="progress-bar pro-3"  >80%</div>
                             </div>
                         </div>
                     </div>
