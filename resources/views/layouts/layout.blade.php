@@ -111,6 +111,28 @@
                 }
             }
         })
+
+        $("#twoslider").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 500,
+            autoplayHoverPause: true,
+            smartSpeed: 900,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1200: {
+                    items: 2
+                },
+            },
+        });
     </script>
     <script src="{{ asset('js/mains.js') }}"></script>
     <script>

@@ -213,6 +213,44 @@
             </div>
         </section>
 
+
+        <!-- ✅ My Trusted Clients Section -->
+        <section class="site-section py-5" id="section-clients">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="heading fw-bold ">My Trusted Clients</h2>
+                    <p class="heading-para mx-auto w-75 text-secondary">
+                        Here are some of the technologies and tools I specialize in — always
+                        learning and improving.
+                    </p>
+                </div>
+
+                <!-- ✅ Owl Carousel Start -->
+                <div class="owl-carousel owl-theme" id="twoslider">
+                    <!-- Slide 1 -->
+                    <div class="item text-center p-3">
+                        <img src="{{ asset('images/LOGO-BEST.png') }}" alt="">
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="item text-center p-3">
+                        <img src="{{ asset('images/Tesla-logo.png') }}" alt="">
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="item text-center p-3">
+                        <img src="{{ asset('images/iqra.png') }}" alt="">
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="item text-center p-3">
+                        <img src="{{ asset('images/hb.png') }}" alt="">
+                    </div>
+               
+
+                 
+                </div>
+                <!-- ✅ Owl Carousel End -->
+            </div>
+        </section>
+
         <script>
             // GSAP Animations
             gsap.from(".skills-box", {
