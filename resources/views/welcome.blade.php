@@ -123,7 +123,7 @@
                         <div class="skills-box p-3">
                             <div class="skill-icon">🎨</div>
                             <h4>UI/UX Design</h4>
-                            <p>Figma, Adobe XD, Prototyping</p>
+                            <p>Figma, Photoshop & Illustrator</p>
                             <div class="progress bg-dark">
                                 <div class="progress-bar" style="width: 85%;"></div>
                             </div>
