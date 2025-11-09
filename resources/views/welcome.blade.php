@@ -96,6 +96,65 @@
             </div>
         </div> --}}
 
+        <section class="site-section py-5" id="section-skills">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="heading">My Skills</h2>
+                        <p class="heading-para mx-auto w-50">
+                            Here are some of the technologies and tools I specialize in — always learning and improving.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row text-center gy-4">
+                    <div class="col-md-4">
+                        <div class="skills-box p-3">
+                            <div class="skill-icon">💻</div>
+                            <h4>Web Development</h4>
+                            <p>HTML, CSS, JS, Bootstrap</p>
+                            <div class="progress bg-dark">
+                                <div class="progress-bar" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="skills-box p-3">
+                            <div class="skill-icon">🎨</div>
+                            <h4>UI/UX Design</h4>
+                            <p>Figma, Adobe XD, Prototyping</p>
+                            <div class="progress bg-dark">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="skills-box p-3">
+                            <div class="skill-icon">⚙️</div>
+                            <h4>Database & Backend</h4>
+                            <p>MySQL, PHP, Laravel, APIs</p>
+                            <div class="progress bg-dark">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // GSAP Animations
+            gsap.from(".skills-box", {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                delay: 0.3,
+                stagger: 0.2,
+                ease: "power2.out"
+            });
+        </script>
         <section class="site-section " id="section-contact">
             <div class="row mb-3">
                 <div class="col-12 text-center">
@@ -145,8 +204,8 @@
                                     <div class="col-md-12 text-center">
                                         <button type="submit" id="submitBtn" class="btn btn-primary rounded btn-md">
                                             <span id="btnText">Send Message</span>
-                                            <span id="btnSpinner" class="spinner-border spinner-border-sm ms-2" role="status"
-                                                style="display:none;"></span>
+                                            <span id="btnSpinner" class="spinner-border spinner-border-sm ms-2"
+                                                role="status" style="display:none;"></span>
                                         </button>
                                     </div>
                                 @else
