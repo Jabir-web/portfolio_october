@@ -67,7 +67,7 @@ label{
 }
 
 input::placeholder,textarea::placeholder{
-    text-align: center;
+    text-align: center !important;
 }
 
 .border-2 {
