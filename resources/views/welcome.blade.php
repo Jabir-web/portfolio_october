@@ -157,14 +157,6 @@
             </section> <!-- #section-photos -->
         </div>
 
-        {{-- <div class="row mb-3 pt-4">
-            <div class="col-12 text-center">
-                <div class="d-inline-block border-2 p-4">
-                    <h2 class="heading ">Code Labs</h2>
-                </div>
-            </div>
-        </div> --}}
-
         <section class="site-section py-5" id="section-skills">
             <div class="container">
                 <div class="row mb-4">
@@ -212,7 +204,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ✅ My Trusted Clients Section -->
         <section class="site-section py-5" id="section-clients">

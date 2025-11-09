@@ -139,20 +139,13 @@
     </script>
     <script src="{{ asset('js/mains.js') }}"></script>
     <script>
-        gsap.from(".code-project-card", {
-            x: 0,
-            y: -150,
-            opacity: 0,
-            duration: 1.0,
-            ease: "power3.out"
-        });
-        gsap.from(".btn", {
-            opacity: 0,
-            scale: 0.7,
+        gsap.to('.head-text',{
+            y: -20,
             duration: 1,
-            delay: 1.7,
-            ease: "back.out(1.0)"
-        });
+            ease: "power1.inOut",
+            repeat: -1,
+            yoyo: true
+        })
     </script>
 
 </body>
