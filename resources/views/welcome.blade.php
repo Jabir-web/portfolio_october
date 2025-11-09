@@ -24,9 +24,9 @@
                 <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
                     <h2 class="heading ">Free Code Projects</h2>
                     <p class="heading-para w-50">
-                        Explore a variety of creative coding projects showcasing modern technologies, problem-solving
-                        skills, and innovation. Each project reflects passion, dedication, and continuous learning in the
-                        world of web development.
+                        Explore a collection of free coding projects built with creativity and modern web technologies. Each
+                        project is designed to help learners understand real-world development concepts while inspiring
+                        innovation, problem-solving, and continuous improvement.
                     </p>
 
 
@@ -243,9 +243,9 @@
                     <div class="item text-center p-3">
                         <img src="{{ asset('images/hb.png') }}" alt="">
                     </div>
-               
 
-                 
+
+
                 </div>
                 <!-- ✅ Owl Carousel End -->
             </div>
