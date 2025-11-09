@@ -149,7 +149,7 @@
                     <div class="more-btn text-center my-4">
                         {{-- pagination links --}}
                         <div class="d-flex justify-content-center">
-                            {{ $projects->withQueryString()->links() }}
+                            {{ $paidprojects->withQueryString()->links() }}
                         </div>
                     </div>
 
