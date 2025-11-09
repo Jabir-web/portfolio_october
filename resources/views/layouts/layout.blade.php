@@ -61,6 +61,9 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
 
+    {{-- ======= cookie  --}}
+     @include('components.cookie-banner')
+    {{-- ======= cookie  --}}
 
     <div class="site-wrap">
 

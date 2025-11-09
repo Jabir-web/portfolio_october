@@ -8,6 +8,7 @@ use App\Http\Controllers\BannerController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ProjectController;
+use Illuminate\Support\Facades\Cookie;
 
 Route::get('/', [PageController::class, 'home'])->name('homepage');
 Route::get('/about-me', [PageController::class, 'about'])->name('aboutpage');
@@ -56,4 +57,10 @@ Route::post('/project/like/{id}', [App\Http\Controllers\ProjectController::class
 
 
 // =========== For Project   ===========
+// =========== For Cookie   ===========
+Route::get('/accept-cookies', function () {
+    Cookie::queue('accept_cookies', true, 60*24*30); // 30 din ke liye cookie
+    return response()->json(['status' => 'ok']);
+})->name('cookies.accept');
+// =========== For Cookie   ===========
 
