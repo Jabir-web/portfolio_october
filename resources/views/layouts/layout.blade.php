@@ -117,7 +117,7 @@
 
         $("#twoslider").owlCarousel({
             loop: true,
-            margin: 20,
+            margin: 40,
             nav: false,
             dots: true,
             autoplay: true,
