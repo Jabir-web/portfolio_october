@@ -141,6 +141,7 @@ class ProjectController extends Controller
             'version' => 'nullable|string|max:100',
             'size' => 'nullable|string|max:100',
             'video_link' => 'nullable|string|max:255',
+            'download_link' => 'nullable',
             'amount' => 'nullable|string|max:100',
             'description' => 'nullable|string',
             'status' => 'nullable|string|max:50',

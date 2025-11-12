@@ -18,6 +18,7 @@ class Project extends Model
         'likes',
         'downloads',
         'video_link',
+        'download_link',
         'amount',
         'status',
     ];

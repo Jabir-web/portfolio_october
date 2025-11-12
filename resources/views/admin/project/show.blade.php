@@ -70,42 +70,62 @@
                             enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
+
                             <div class="modal-header">
                                 <h5 class="modal-title" id="editProjectModalLabel-{{ $user->id }}">Edit Project</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
+
                             <div class="modal-body">
+                                <!-- Title -->
                                 <div class="form-group mb-3">
                                     <label for="title-{{ $user->id }}">Title</label>
-                                    <input id="title-{{ $user->id }}" name="title" class="form-control"
-                                        value="{{ $user->title }}">
+                                    <input id="title-{{ $user->id }}" name="title" type="text"
+                                        class="form-control" value="{{ $user->title }}" required>
                                 </div>
+
+                                <!-- Amount -->
                                 <div class="form-group mb-3">
                                     <label for="amount-{{ $user->id }}">Amount</label>
-                                    <input id="amount-{{ $user->id }}" name="amount" class="form-control"
-                                        value="{{ $user->amount }}">
+                                    <input id="amount-{{ $user->id }}" name="amount" type="number"
+                                        class="form-control" value="{{ $user->amount }}" required>
                                 </div>
+
+                                <!-- Views -->
                                 <div class="form-group mb-3">
                                     <label for="views-{{ $user->id }}">Views</label>
                                     <input id="views-{{ $user->id }}" name="views" type="number"
                                         class="form-control" value="{{ $user->views }}">
                                 </div>
+
+                                <!-- Download Link -->
+                                <div class="form-group mb-3">
+                                    <label for="download_link-{{ $user->id }}">Download Link</label>
+                                    <input id="download_link-{{ $user->id }}" name="download_link" type="text"
+                                        class="form-control" value="{{ $user->download_link }}"
+                                        placeholder="https://example.com/file.zip">
+                                </div>
+
+                                <!-- Status -->
                                 <div class="form-group mb-3">
                                     <label for="status-{{ $user->id }}">Status</label>
                                     <select id="status-{{ $user->id }}" name="status" class="form-control">
-                                        <option value="active" {{ $user->status == 'active' ? 'selected' : '' }}>active
+                                        <option value="active" {{ $user->status == 'active' ? 'selected' : '' }}>Active
                                         </option>
                                         <option value="inactive" {{ $user->status == 'inactive' ? 'selected' : '' }}>
-                                            inactive</option>
+                                            Inactive</option>
                                     </select>
                                 </div>
+
+                                <!-- Image -->
                                 <div class="form-group mb-3">
                                     <label for="image-{{ $user->id }}">Image (optional)</label>
                                     <input id="image-{{ $user->id }}" type="file" name="image"
-                                        class="form-control-file">
+                                        class="form-control">
                                 </div>
                             </div>
+
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Save changes</button>
