@@ -53,11 +53,7 @@
                                         Demo</a>
                                 </div>
                                 @if ($project->amount > 0)
-                                    <div class="view-box bg-dark rounded d-flex justify-content-center align-items-center  col-md-3 m-1"
-                                        style="font-size: 18px">
-                                        <a href="{{ $project->download_link }}" target="_blank"
-                                            class="btn btn-dark">Downloads</a>
-                                    </div>
+                                   <div></div>
                                 @else
                                     <div class="view-box bg-dark rounded d-flex justify-content-center align-items-center  col-md-3 m-1"
                                         style="font-size: 18px">
