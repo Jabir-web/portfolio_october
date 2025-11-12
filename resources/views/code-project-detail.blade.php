@@ -52,10 +52,21 @@
                                     <a href="{{ $project->video_link }}" target="_blank" class="btn btn-primary">Live
                                         Demo</a>
                                 </div>
-                                <div class="view-box bg-dark rounded d-flex justify-content-center align-items-center  col-md-3 m-1"
-                                    style="font-size: 18px">
-                                    <a href="{{ $project->download_link }}" target="_blank" class="btn btn-dark">Downloads</a>
-                                </div>
+                                @if ($project->amount > 0)
+                                    <div class="view-box bg-dark rounded d-flex justify-content-center align-items-center  col-md-3 m-1"
+                                        style="font-size: 18px">
+                                        <a href="{{ $project->download_link }}" target="_blank"
+                                            class="btn btn-dark">Downloads</a>
+                                    </div>
+                                @else
+                                    <div class="view-box bg-dark rounded d-flex justify-content-center align-items-center  col-md-3 m-1"
+                                        style="font-size: 18px">
+                                        <a href="{{ $project->download_link }}" target="_blank"
+                                            class="btn btn-dark">Free
+                                            Download</a>
+                                    </div>
+                                @endif
+
                             </div>
 
                         </div>
