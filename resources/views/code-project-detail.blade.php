@@ -55,12 +55,12 @@
                                 @if ($project->amount > 0)
                                    <div></div>
                                 @else
-                                    <div class="view-box bg-dark rounded d-flex justify-content-center align-items-center  col-md-3 m-1"
+                                    {{-- <div class="view-box bg-dark rounded d-flex justify-content-center align-items-center  col-md-3 m-1"
                                         style="font-size: 18px">
                                         <a href="{{ $project->download_link }}" target="_blank"
                                             class="btn btn-dark">Free
                                             Download</a>
-                                    </div>
+                                    </div> --}}
                                 @endif
 
                             </div>
